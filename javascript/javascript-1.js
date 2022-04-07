@@ -1,18 +1,15 @@
 function sum(value) {
-	let summa = value;
+	if (value === undefined) {
+		return 0;
+	}
 
-	function f(v) {
+	let summa = value;
+	return f = (v) => {
 		if (v === undefined) {
 			return summa;
 		}
 
 		summa += v;
 		return f;
-	}
-
-	if (value === undefined) {
-		return 0;
-	}
-
-	return f;
+    }
 }
